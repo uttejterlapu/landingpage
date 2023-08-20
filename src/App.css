@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: montserrat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background: #1AD31633;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-menu-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-menu-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #3A4F39;
+  border-radius: 4px;
+}
+
+.custom-menu-icon span:nth-child(2) {
+  width: 30px;
+}
+
+.custom-menu-icon span:nth-child(3) {
+  width: 30px;
+}
+
+label.logo {
+  color: #000;
+  padding: 0 60px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
+  font-family: Maven Pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.caption {
+  font-family: Katibeh;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #2D2E2E;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  color: #fff;
+  background: #3A4F39;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
   color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+#check {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 952px) {
+  label.logo {
+    padding-left: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .logo{
+    padding: 0 0 0 20px;
+  }
+  .title{
+    font-size: 14px;
+  }
+
+  .caption{
+    font-size: 10px;
+  }
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #19d31667;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #3d3d3d;
+  }
+
+  #check:checked~ul {
+    left: 0;
   }
 }

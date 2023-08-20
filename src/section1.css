@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display&display=swap');
+
+.section1 {
+    background-image: url(./assts/farmer.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    /* Needed for positioning the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 23, 0, 0.6);
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    /* Adjust this value to your preference */
+    transform: translateY(-50%);
+    max-width: 50%;
+    height: 370px;
+    width: 400px;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #fff;
+}
+
+.heading span {
+    color: rgba(5, 255, 0, 1);
+}
+
+.content {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.btn {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.btn-b {
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    background-color: rgba(26, 211, 22, 0.7);
+    padding: 10px 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.img-buttom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-buttom img {
+    display: inline-block;
+}
