@@ -12,7 +12,12 @@ code {
     monospace;
 }
 
-App {
+.app {
   position: sticky;
   top: 0;
+  z-index: 3; /* Place the app in front of the menu */
+}
+
+div{
+  z-index: -1;
 }

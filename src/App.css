@@ -5,7 +5,9 @@
   list-style: none;
   box-sizing: border-box;
 }
-
+a{
+  cursor: pointer;
+}
 body {
   font-family: montserrat;
 }
@@ -35,14 +37,6 @@ nav {
   height: 4px;
   background-color: #3A4F39;
   border-radius: 4px;
-}
-
-.custom-menu-icon span:nth-child(2) {
-  width: 30px;
-}
-
-.custom-menu-icon span:nth-child(3) {
-  width: 30px;
 }
 
 label.logo {
@@ -112,6 +106,11 @@ a:hover {
   display: none;
 }
 
+nav ul.active {
+  left: 0;
+  width: 350px; 
+}
+
 @media (max-width: 952px) {
   label.logo {
     padding-left: 50px;
@@ -141,7 +140,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #19d31667;
+    background: #7af076;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -150,18 +149,18 @@ a:hover {
 
   nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 10px 0;
     line-height: 30px;
   }
 
   nav ul li a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   a:hover,
   a.active {
-    background: none;
-    color: #3d3d3d;
+    background: #000;
+    color: #ffffff;
   }
 
   #check:checked~ul {

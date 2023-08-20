@@ -1,22 +1,28 @@
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <header>
       <nav>
-        <input type="checkbox" id="check"></input>
+        <input type="checkbox" id="check" checked={menuOpen}></input>
         <label class="logo">
           <label  class="title">FARMINNO TECH</label>
           <label  class="caption">CORPORATION</label>
         </label>
-        <label for="check" class="checkbtn">
+        <label htmlFor="check" class="checkbtn" onClick={toggleMenu}>
           <div class="custom-menu-icon">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </label>
-        <ul>
+        <ul className={menuOpen ? "active" : ""}>
           <li>
             <a href="#">
               Home
@@ -36,6 +42,11 @@ function App() {
           </li>
           <li>
             <a class="active"  href="#">Careers</a>
+          </li>
+          <li>
+            <a class="active" onClick={toggleMenu} className="exit-btn" >
+              Exit
+            </a>
           </li>
         </ul>
       </nav>
