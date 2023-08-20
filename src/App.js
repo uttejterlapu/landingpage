@@ -43,11 +43,6 @@ function App() {
           <li>
             <a class="active"  href="#">Careers</a>
           </li>
-          <li>
-            <a class="active" onClick={toggleMenu} className="exit-btn" >
-              Exit
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
