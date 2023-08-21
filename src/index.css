@@ -12,9 +12,10 @@ code {
     monospace;
 }
 
-.app {
+.navbar {
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 3; /* Place the app in front of the menu */
 }
 

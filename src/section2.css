@@ -1,0 +1,8 @@
+.section2 {
+    background-image: url(./assts/sprayers.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    /* Needed for positioning the overlay */
+}
