@@ -73,14 +73,15 @@
     cursor: pointer;
 }
 
-.img-buttom {
+.img-bottom{
     position: absolute;
-    bottom: -4px;
+    bottom: 4px;
     left: 0;
     width: 100%;
     text-align: center;
 }
 
-.img-buttom img {
+.img-bottom img {
     display: inline-block;
+    width: 100%;
 }

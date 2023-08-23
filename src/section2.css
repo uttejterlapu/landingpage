@@ -1,8 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .section2 {
-    background-image: url(./assts/sprayers.jpg);
+    background-image: url(./assts/section2bg.jpeg);
     background-size: cover;
     background-position: center center;
     position: relative;
-    height: 100vh;
+    height: 120vh;
     /* Needed for positioning the overlay */
+}
+
+.img-top-sec2{
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-top-sec2 img {
+    display: inline-block;
+    width: 100%;
+}
+
+.img-bottom-sec2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-bottom-sec2 img{
+    display: inline-block;
+    width: 100%;
+}
+
+.content-section2{
+    padding: 100px 50px;
+}
+
+.content-section2 h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    line-height: 58.51px;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+article{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.aboutus-imgs{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #707070;
 }

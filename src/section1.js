@@ -1,6 +1,5 @@
 import "./section1.css";
 import Wave from "./assts/wave-1.svg";
-import Circle from "./assts/circle.svg";
 import Arrow from "./assts/arrow.svg";
 
 function section1() {
@@ -21,13 +20,13 @@ function section1() {
           <button className="btn-b">
             Know More!
             <div className="image-container">
-              <img className="arrow" src={Arrow}></img>
+              <img className="arrow" src={Arrow} alt="know-more"></img>
             </div>
           </button>
         </div>
       </div>
-      <div className="img-buttom">
-        <img src={Wave}></img>
+      <div className="img-bottom">
+        <img src={Wave} alt="wave"></img>
       </div>
     </div>
   );
