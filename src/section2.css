@@ -39,11 +39,11 @@
     width: 100%;
 }
 
-.content-section2, .content-section3{
+.content-section2, .content-section3,.content-section4{
     padding: 100px 50px;
 }
 
-.content-section2 h1, .content-section3 h1{
+.content-section2 h1, .content-section3 h1, .content-section4 h1{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
@@ -110,7 +110,7 @@ article{
 }
 
 @media (max-width:786px) {
-    .content-section2 h1{
+    .content-section2 h1, .content-section3 h1, .content-section4 h1{
         font-size: 22px;
     }
 
