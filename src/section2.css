@@ -9,6 +9,10 @@
     /* Needed for positioning the overlay */
 }
 
+.waved{
+    width: 100%;
+}
+
 .img-top-sec2{
     position: absolute;
     top: -8px;
@@ -35,11 +39,11 @@
     width: 100%;
 }
 
-.content-section2{
+.content-section2, .content-section3{
     padding: 100px 50px;
 }
 
-.content-section2 h1{
+.content-section2 h1, .content-section3 h1{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
@@ -55,9 +59,71 @@ article{
     margin-top: 20px;
 }
 
+.aboutus-img{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .aboutus-imgs{
     height: 200px;
     width: 200px;
     border-radius: 50%;
     background-color: #707070;
+}
+
+.img-block{
+    text-align: center;
+    color: #fff;
+    height: auto;
+    width: 200px;
+}
+
+.img-block .name{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.img-block .role{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFEFAB2;
+    font-size: 12px;
+}
+
+
+@media (max-width: 1000px) {
+    article{
+        font-size: 13px;
+    }
+
+    .aboutus-imgs{
+        height: 125px;
+        width: 125px;
+    }
+
+    .img-block{
+        width: 125px;
+    }
+}
+
+@media (max-width:786px) {
+    .content-section2 h1{
+        font-size: 22px;
+    }
+
+    article{
+        font-size: 13px;
+    }
+
+    .aboutus-imgs{
+        height: 125px;
+        width: 125px;
+    }
+
+    .img-block{
+        width: 120px;
+    }    
 }

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import Section1 from "./section1";
 import Section2 from "./section2";
+import Section3 from "./section3";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +14,7 @@ root.render(
     <div className="navbar"><App /></div>
     <Section1 />
     <Section2 />
+    <Section3 />
     </React.StrictMode>
   </div>
 );

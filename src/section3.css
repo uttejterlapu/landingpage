@@ -1,0 +1,73 @@
+.section3 {
+    background-image: url(./assts/wheat.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 120vh;
+    /* Needed for positioning the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 23, 0, 0.6);
+}
+
+.img-top-sec3 img {
+    display: inline-block;
+    width: 100%;
+}
+
+.img-bottom-sec3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img-bottom-sec3 img{
+    display: inline-block;
+    width: 100%;
+}
+
+.product-img-class{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.product-img-card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 28px;
+}
+
+.product-des p{
+    color: #fff;
+}
+
+.content-section3 h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 786px){
+    .product-img-class{
+        margin-top: 70px;
+    }
+
+    .product-img-card img{
+        height: 150px;
+        width: 150px;
+        border-radius: 14px;
+    }
+}

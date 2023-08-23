@@ -75,7 +75,7 @@
 
 .img-bottom{
     position: absolute;
-    bottom: 4px;
+    bottom: -4px;
     left: 0;
     width: 100%;
     text-align: center;
