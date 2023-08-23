@@ -28,6 +28,7 @@
 }
 
 .ques{
+    padding: 0 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
